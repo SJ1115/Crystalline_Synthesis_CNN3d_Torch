@@ -36,22 +36,3 @@ class config_CAE(config):
     is_unsupervised = True
     batch_size = 8
 
-"""For model_re.py
-"""
-class config_CNN_re(config):
-    ## CNN
-    channels = [32, 32, 32]
-    pool = [4, 4, 4]
-    ## Model
-    dropout_conv = 0
-    dropout_FC = .5
-    
-    batch_size=8
-
-class config_CAE_re(config):
-    channels = [32, 32, 64]
-    pool = [4, 4, 2]
-
-    dropout_FC = .5
-    is_unsupervised = True
-    batch_size = 8
